@@ -39,6 +39,7 @@ class App extends React.Component {
 
       setCurrentUser(user);
   }
+  
   render() {
     return (
       <div>

@@ -1,276 +1,276 @@
 const SHOP_DATA = [
   {
     id: 1,
-    title: 'Jackets',
-    routetitle: 'jackets',
+    title: 'Fasting Essentials',
+    routetitle: 'fastingessentials',
     items: [
       {
         id: 1,
-        title: 'Dynamic Friends',
-        imageUrl: 'https://images.unsplash.com/photo-1542482378-4e3530c8e525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 25
+        title: 'Sabudana - White',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/l/30000216_6-bb-royal-sabudana-white-medium.jpg',
+        price: 48
       },
       {
         id: 2,
-        title: 'Rainy Black',
-        imageUrl: 'https://images.unsplash.com/photo-1509539662397-116cb90542f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 18
+        title: 'Kaju - Whole',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/l/10000523_6-bb-popular-cashewkaju-whole.jpg',
+        price: 218
       },
       {
         id: 3,
-        title: 'Corona Blue',
-        imageUrl: 'https://images.unsplash.com/photo-1515614466515-e512e497a047?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 35
+        title: 'Thick Poha',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/l/40178083_4-tata-sampann-thick-poha.jpg',
+        price: 36
       },
       {
         id: 4,
-        title: 'Cozy Gray',
-        imageUrl: 'https://images.unsplash.com/photo-1524150224918-8a8eded72c34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80',
-        price: 25
+        title: 'Almond - Californian',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/l/10000519_12-bb-royal-almondbadam-californian-giri.jpg',
+        price: 213
       },
       {
         id: 5,
-        title: 'Comfy Blue',
-        imageUrl: 'https://images.unsplash.com/photo-1520975408777-d189f6edc46d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 18
+        title: 'Raisins - Indian',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/l/10000530_9-bb-royal-raisinskishmish-indian.jpg',
+        price: 80
       },
       {
         id: 6,
-        title: 'Biker Brown',
-        imageUrl: 'https://images.unsplash.com/photo-1559551409-dadc959f76b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 14
+        title: 'Organic - Almond',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40092231_8-bb-royal-organic-almondbadam.jpg',
+        price: 275
       },
       {
         id: 7,
-        title: 'Snowy Red and Blue',
-        imageUrl: 'https://images.unsplash.com/photo-1577489374664-6d36aa473024?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 18
+        title: 'Chiroti Sooji',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40018892_4-bb-royal-chiroti-sooji.jpg',
+        price: 53
       },
       {
         id: 8,
-        title: 'Cold Black',
-        imageUrl: 'https://images.unsplash.com/photo-1536278078870-6a4402cb2c8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 14
+        title: 'Organic Raisin',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075470_8-bb-royal-organic-raisinkismis.jpg',
+        price: 140
       }
     ]
   },
   {
     id: 2,
-    title: 'Art Work',
-    routetitle: 'artwork',
+    title: 'Chocolates And Sweets',
+    routetitle: 'sweets',
     items: [
       {
         id: 9,
-        title: 'Michael Angelo',
-        imageUrl: 'https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        price: 220
+        title: 'Celebrations Chocolate',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/1208475_4-cadbury-celebrations-chocolate-gift-box-rich-dry-fruit.jpg',
+        price: 800
       },
       {
         id: 10,
-        title: 'Illuminati',
-        imageUrl: 'https://images.unsplash.com/photo-1523554888454-84137e72c3ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 280
+        title: 'Assorted Chocolate',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40181110_3-lindberg-assorted-chocolate-thins-18-pcs.jpg',
+        price: 309
       },
       {
         id: 11,
-        title: 'Pencil Shading',
-        imageUrl: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 110
+        title: 'Rocher - Chocolate',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/118214_14-ferrero-rocher-chocolate.jpg',
+        price: 529
       },
       {
         id: 12,
-        title: 'Human Chain',
-        imageUrl: 'https://images.unsplash.com/photo-1551913902-c92207136625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 160
+        title: 'Rasgulla',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/101212_2-haldirams-rasgulla.jpg',
+        price: 185
       },
       {
         id: 13,
-        title: 'Perspective Playground',
-        imageUrl: 'https://images.unsplash.com/photo-1554188248-986adbb73be4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 160
+        title: 'Chocolate Truffles',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40142550_5-lindberg-chocolate-truffles-gift-box.jpg',
+        price: 299
       },
       {
         id: 14,
-        title: 'Space on Crack',
-        imageUrl: 'https://images.unsplash.com/photo-1561214115-f2f134cc4912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 160
+        title: 'Belgian Chocolate',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40087513_12-lindberg-assorted-gift-box-pure-belgian-chocolate-truffles.jpg',
+        price: 699
       },
       {
         id: 15,
-        title: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-        price: 190
+        title: 'Chocolate Thins',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40181111_3-lindberg-assorted-chocolate-thins-36-pcs.jpg',
+        price: 609
       },
       {
         id: 16,
-        title: 'Not A Pineapple',
-        imageUrl: 'https://images.unsplash.com/photo-1494252713559-f26b4bf0b174?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 200
+        title: 'Peanut Chocolate',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/251209_13-snickers-peanut-filled-chocolate-bar.jpg',
+        price: 35
       }
     ]
   },
   {
     id: 3,
-    title: 'Accessories',
-    routetitle: 'accessories',
+    title: 'Pooja Needs',
+    routetitle: 'pooja',
     items: [
       {
         id: 17,
-        title: 'Flower Purse',
-        imageUrl: 'https://images.unsplash.com/photo-1564139615082-01535600057f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 125
+        title: 'Agarbatti Sticks',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/30008750_2-mangaldeep-sadhvi-agarbatti-sticks.jpg',
+        price: 35
       },
       {
         id: 18,
-        title: 'Chanel',
-        imageUrl: 'https://images.unsplash.com/photo-1537832816519-689ad163238b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 90
+        title: 'Oil - Deepa Light',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/245525_1-safal-oil-deepa-light.jpg',
+        price: 56
       },
       {
         id: 19,
-        title: 'Moriarty Bag',
-        imageUrl: 'https://images.unsplash.com/photo-1546938576-04917ec516ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-        price: 90
+        title: 'Deepa Bathi',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40126962_1-om-sri-kar-deepa-bathi-long.jpg',
+        price: 30
       },
       {
         id: 20,
-        title: 'Infinite Purse',
-        imageUrl: 'https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 165
+        title: 'Matchbox',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40027412_1-home-lite-matchbox-big.jpg',
+        price: 10
       },
       {
         id: 21,
-        title: 'Jewellery',
-        imageUrl: 'https://images.unsplash.com/photo-1519431458145-1ca3d5ccd68e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 185
+        title: 'Marigold',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/20001185_9-fresho-marigold-orange.jpg',
+        price: 17
       },
       {
         id: 22,
-        title: 'Lipstick and Purse',
-        imageUrl: 'https://images.unsplash.com/photo-1535556261192-f718879e7f2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 185
+        title: 'Lamp Wicks',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40000307_3-om-bhakti-lamp-wicks-cotton-long-batti.jpg',
+        price: 25
       },
       {
         id: 23,
-        title: 'Red Purse',
-        imageUrl: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 185
+        title: 'Camphor Tablets',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40126957_1-re-camphor-camphor-tablets.jpg',
+        price: 50
       },
       {
         id: 24,
-        title: 'Paper Bag',
-        imageUrl: 'https://images.unsplash.com/photo-1574365569389-a10d488ca3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 185
+        title: 'Cut Roses',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/mm/40054182_1-fresho-cut-roses.jpg',
+        price: 41
       }
     ]
   },
   {
     id: 4,
-    title: 'T-Shirts',
-    routetitle: 'tshirts',
+    title: 'Daily Vegetables',
+    routetitle: 'vegetables',
     items: [
       {
         id: 25,
-        title: 'Black and White',
-        imageUrl: 'https://images.unsplash.com/photo-1506274512-56255c252865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 25
+        title: 'Onion',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000148_28-fresho-onion.jpg',
+        price: 24
       },
       {
         id: 26,
-        title: 'Black Wind',
-        imageUrl: 'https://images.unsplash.com/photo-1582259161965-663b6e55dfff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 20
+        title: 'Potato',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000159_25-fresho-potato.jpg',
+        price: 39
       },
       {
         id: 27,
-        title: 'Plain White',
-        imageUrl: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 80
+        title: 'Ladies Finger',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg',
+        price: 22
       },
       {
         id: 28,
-        title: 'Forever Reckless',
-        imageUrl: 'https://images.unsplash.com/photo-1568641470259-3a3253bf8739?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 80
+        title: 'Palak',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000389_11-fresho-palak.jpg',
+        price: 12
       },
       {
         id: 29,
-        title: 'Leave The Road',
-        imageUrl: 'https://images.unsplash.com/photo-1554568218-0f1715e72254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 45
+        title: 'Tomato',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000201_15-fresho-tomato-hybrid.jpg',
+        price: 9
       },
       {
         id: 30,
-        title: 'Champion',
-        imageUrl: 'https://images.unsplash.com/photo-1584678898939-33b688db30b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=327&q=80',
-        price: 135
+        title: 'Cauliflower',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg',
+        price: 19
       },
       {
         id: 31,
-        title: 'Wiz Khalifa Thrasher',
-        imageUrl: 'https://images.unsplash.com/photo-1569130460303-7995e469b7c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 20
+        title: 'Mushrooms',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000273_13-fresho-mushrooms-button.jpg',
+        price: 49
       },
       {
         id: 32,
-        title: 'Bayern Munich',
-        imageUrl: 'https://images.unsplash.com/photo-1554703869-8bb432598cf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        title: 'Capsicum',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg',
         price: 20
       }
     ]
   },
   {
     id: 5,
-    title: 'Hoodies',
-    routetitle: 'hoodies',
+    title: 'Fresh Fruits',
+    routetitle: 'fruits',
     items: [
       {
         id: 33,
-        title: 'Parkour White',
-        imageUrl: 'https://images.unsplash.com/photo-1487528001669-63c47a53fd39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 325
+        title: 'Banana',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000031_21-fresho-banana-yelakki.jpg',
+        price: 90
       },
       {
         id: 34,
-        title: 'Rebel Musician',
-        imageUrl: 'https://images.unsplash.com/photo-1485102068545-7286b0d199d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 20
+        title: 'Coconut',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000093_16-fresho-coconut-medium.jpg',
+        price: 25
       },
       {
         id: 35,
-        title: 'Millenial Black and Gray',
-        imageUrl: 'https://images.unsplash.com/photo-1593655364090-9ff8334de627?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 25
+        title: 'Pomegranate',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000269_25-fresho-pomegranate.jpg',
+        price: 119
       },
       {
         id: 36,
-        title: 'kaleidoscope Black',
-        imageUrl: 'https://images.unsplash.com/photo-1520115623698-7a16e69f4864?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 25
+        title: 'Watermelon',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
+        price: 32
       },
       {
         id: 37,
-        title: 'Smoky Orange',
-        imageUrl: 'https://images.unsplash.com/photo-1509942774463-acf339cf87d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 40
+        title: 'Apple',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
+        price: 189
       },
       {
         id: 38,
-        title: 'Depressed Green',
-        imageUrl: 'https://images.unsplash.com/photo-1518042349813-f0bdac4ab129?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 40
+        title: 'Muskmelon',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40073761_6-fresho-muskmelon-striped.jpg',
+        price: 39
       },
       {
         id: 39,
-        title: 'Vanilla White',
-        imageUrl: 'https://images.unsplash.com/photo-1526476148966-98bd039463ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 40
+        title: 'Papaya',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
+        price: 34
       },
       {
         id: 40,
-        title: 'Joyfull Gray',
-        imageUrl: 'https://images.unsplash.com/photo-1506135385820-d15107bf8e1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        price: 40
+        title: 'Avocado',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000013_23-fresho-avocado.jpg',
+        price: 106
       }
     ]
   }

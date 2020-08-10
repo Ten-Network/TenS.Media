@@ -1,7 +1,7 @@
 {
-  "name": "yellow-raven",
+  "name": "Big Basket",
   "version": "1.0.0",
-  "description": "E-Commerce Website",
+  "description": "Big Basket Clone",
   "main": "server.js",
   "scripts": {
     "start": "node server",
@@ -9,7 +9,7 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Lavneesh Jaggi and Kira Sama",
+  "author": "Lavneesh Jaggi",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",

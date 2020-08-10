@@ -29,7 +29,7 @@ const CollectionItem = ({ item, addItem, history }) => {
             />
             <div className='collection-footer'>
                 <span className='name'>{title}</span>
-                <span className='price'>${price}</span>
+                <span className='price'>Rs {price}</span>
             </div>
             <CustomButton 
                 inverted
