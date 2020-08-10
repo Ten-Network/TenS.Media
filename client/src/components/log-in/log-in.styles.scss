@@ -1,0 +1,23 @@
+.log-in {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+
+    .title {
+        margin: 6px 0;
+    }
+
+    .option {
+        margin-top: 6px;
+
+        .route {
+            color: #20BF55;
+            margin-left: 9px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}

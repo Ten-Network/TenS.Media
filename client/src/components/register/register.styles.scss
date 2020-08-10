@@ -1,0 +1,18 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+
+    .title {
+        margin: 6px 0;
+    }
+
+    .option {
+        margin: 6px 0;
+
+        .route {
+            color: #20BF55;
+            margin-left: 9px;
+        }
+    }
+}

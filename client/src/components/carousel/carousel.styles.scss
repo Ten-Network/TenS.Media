@@ -1,0 +1,105 @@
+.carousel {
+    align-items: center;
+    border: 1px solid #F5D020;
+    box-sizing: border-box;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 18vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    &:hover {
+        cursor: pointer;
+
+        .btn {
+            opacity: 0.9;
+        }
+
+        .slider {  
+            overflow: hidden;
+            
+            .msg {
+                opacity: 0.9;
+            }
+        }
+    }
+
+    .slider {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100%;
+        min-width: 100%;
+        transition: transform 0.9s ease-in-out;        
+
+        .img {
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .msg {        
+            align-items: center;
+            background: #232526; 
+            background: -webkit-linear-gradient(to left, #414345, #232526);  
+            background: linear-gradient(to left, #414345, #232526); 
+            border: 1px solid #f5D020;
+            display: flex;
+            flex-direction: column;
+            height: 90px;
+            justify-content: center;
+            opacity: 0.6;
+            padding: 0 24px;
+            position: absolute;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .title {
+                color: #f5D020;
+                font-size: 22px;
+                font-weight: bold;
+                margin-bottom: 6px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    .btn {
+        align-items: center;
+        background: black;
+        border: 1px solid #F5D020;
+        color: #F5D020;
+        cursor: pointer;
+        font-size: 3vw;
+        height: 9%;
+        justify-content: center;
+        opacity: 0.6;
+        outline: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3%;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    #left {
+        left: 0;
+        @extend .btn;
+    }
+
+    #right {
+        right: 0;
+        @extend .btn;
+    }
+}
