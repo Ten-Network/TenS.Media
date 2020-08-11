@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  fasting: {
     id: 1,
     title: 'Fasting Essentials',
     routetitle: 'fasting',
@@ -54,7 +54,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  sweets: {
     id: 2,
     title: 'Chocolates & Sweets',
     routetitle: 'sweets',
@@ -109,7 +109,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  pooja: {
     id: 3,
     title: 'Pooja Needs',
     routetitle: 'pooja',
@@ -164,7 +164,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  vegetables: {
     id: 4,
     title: 'Daily Vegetables',
     routetitle: 'vegetables',
@@ -219,7 +219,7 @@ const SHOP_DATA = [
       }
     ]
   },
-  {
+  fruits: {
     id: 5,
     title: 'Fresh Fruits',
     routetitle: 'fruits',
@@ -273,7 +273,337 @@ const SHOP_DATA = [
         price: 106
       }
     ]
+  },
+  apples: {
+    id: 6,
+    title: 'Apples',
+    routetitle: 'apples',
+    items: [
+      {
+        id: 41,
+        title: 'Apple - D.C. Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
+        price: 189
+      },
+      {
+        id: 42,
+        title: 'Apple - Royal Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
+        price: 197
+      },
+      {
+        id: 43,
+        title: 'Apple - D.C. Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
+        price: 173
+      },
+      {
+        id: 44,
+        title: 'Apple - Royal Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
+        price: 126
+      },
+      {
+        id: 45,
+        title: 'Apple - Fuji',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
+        price: 209
+      },
+      {
+        id: 46,
+        title: 'Apple - Royal Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
+        price: 219
+      },
+      {
+        id: 47,
+        title: 'Apple - D.C. Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
+        price: 209
+      },
+      {
+        id: 48,
+        title: 'Apple - Fuji Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
+        price: 209
+      }
+    ]
+  },
+  proteins: {
+    id: 7,
+    title: 'Proteins',
+    routetitle: 'proteins',
+    items: [
+      {
+        id: 49,
+        title: 'Apple - D.C. Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
+        price: 189
+      },
+      {
+        id: 50,
+        title: 'Apple - Royal Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
+        price: 197
+      },
+      {
+        id: 51,
+        title: 'Apple - D.C. Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
+        price: 173
+      },
+      {
+        id: 52,
+        title: 'Apple - Royal Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
+        price: 126
+      },
+      {
+        id: 53,
+        title: 'Apple - Fuji',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
+        price: 209
+      },
+      {
+        id: 54,
+        title: 'Apple - Royal Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
+        price: 219
+      },
+      {
+        id: 55,
+        title: 'Apple - D.C. Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
+        price: 209
+      },
+      {
+        id: 56,
+        title: 'Apple - Fuji Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
+        price: 209
+      }
+    ]
+  },
+  cleaning: {
+    id: 8,
+    title: 'Apples',
+    routetitle: 'cleaning',
+    items: [
+      {
+        id: 57,
+        title: 'Apple - D.C. Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
+        price: 189
+      },
+      {
+        id: 58,
+        title: 'Apple - Royal Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
+        price: 197
+      },
+      {
+        id: 59,
+        title: 'Apple - D.C. Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
+        price: 173
+      },
+      {
+        id: 60,
+        title: 'Apple - Royal Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
+        price: 126
+      },
+      {
+        id: 61,
+        title: 'Apple - Fuji',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
+        price: 209
+      },
+      {
+        id: 62,
+        title: 'Apple - Royal Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
+        price: 219
+      },
+      {
+        id: 63,
+        title: 'Apple - D.C. Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
+        price: 209
+      },
+      {
+        id: 64,
+        title: 'Apple - Fuji Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
+        price: 209
+      }
+    ]
+  },
+  snacks: {
+    id: 9,
+    title: 'Apples',
+    routetitle: 'kitchen',
+    items: [
+      {
+        id: 65,
+        title: 'Apple - D.C. Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
+        price: 189
+      },
+      {
+        id: 66,
+        title: 'Apple - Royal Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
+        price: 197
+      },
+      {
+        id: 67,
+        title: 'Apple - D.C. Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
+        price: 173
+      },
+      {
+        id: 68,
+        title: 'Apple - Royal Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
+        price: 126
+      },
+      {
+        id: 69,
+        title: 'Apple - Fuji',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
+        price: 209
+      },
+      {
+        id: 70,
+        title: 'Apple - Royal Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
+        price: 219
+      },
+      {
+        id: 71,
+        title: 'Apple - D.C. Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
+        price: 209
+      },
+      {
+        id: 72,
+        title: 'Apple - Fuji Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
+        price: 209
+      }
+    ]
+  },
+  kitchen: {
+    id: 10,
+    title: 'Apples',
+    routetitle: 'kitchen',
+    items: [
+      {
+        id: 73,
+        title: 'Apple - D.C. Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
+        price: 189
+      },
+      {
+        id: 74,
+        title: 'Apple - Royal Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
+        price: 197
+      },
+      {
+        id: 75,
+        title: 'Apple - D.C. Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
+        price: 173
+      },
+      {
+        id: 76,
+        title: 'Apple - Royal Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
+        price: 126
+      },
+      {
+        id: 77,
+        title: 'Apple - Fuji',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
+        price: 209
+      },
+      {
+        id: 78,
+        title: 'Apple - Royal Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
+        price: 219
+      },
+      {
+        id: 79,
+        title: 'Apple - D.C. Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
+        price: 209
+      },
+      {
+        id: 80,
+        title: 'Apple - Fuji Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
+        price: 209
+      }
+    ]
+  },
+  breakfast: {
+    id: 11,
+    title: 'Apples',
+    routetitle: 'breakfast',
+    items: [
+      {
+        id: 81,
+        title: 'Apple - D.C. Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
+        price: 189
+      },
+      {
+        id: 82,
+        title: 'Apple - Royal Regular',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
+        price: 197
+      },
+      {
+        id: 83,
+        title: 'Apple - D.C. Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
+        price: 173
+      },
+      {
+        id: 84,
+        title: 'Apple - Royal Economy',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
+        price: 126
+      },
+      {
+        id: 85,
+        title: 'Apple - Fuji',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
+        price: 209
+      },
+      {
+        id: 86,
+        title: 'Apple - Royal Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
+        price: 219
+      },
+      {
+        id: 87,
+        title: 'Apple - D.C. Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
+        price: 209
+      },
+      {
+        id: 88,
+        title: 'Apple - Fuji Premium',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
+        price: 209
+      }
+    ]
   }
-];
+};
 
 export default SHOP_DATA;
