@@ -2,7 +2,7 @@ const SHOP_DATA = [
   {
     id: 1,
     title: 'Fasting Essentials',
-    routetitle: 'fastingessentials',
+    routetitle: 'fasting',
     items: [
       {
         id: 1,
@@ -56,7 +56,7 @@ const SHOP_DATA = [
   },
   {
     id: 2,
-    title: 'Chocolates And Sweets',
+    title: 'Chocolates & Sweets',
     routetitle: 'sweets',
     items: [
       {

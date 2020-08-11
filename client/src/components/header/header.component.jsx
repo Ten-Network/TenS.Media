@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
 
-import { ReactComponent as Logo } from '../../assets/yellow-raven.svg';
+import { ReactComponent as Logo } from '../../assets/big-basket.svg';
 
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
@@ -54,9 +54,6 @@ const Header  = ({ currentUser, hidden }) => {
                 </Link>
                 <Link className='option' to='/shop'>
                     Shop
-                </Link>
-                <Link className='option' to='/contact'>
-                    Contact
                 </Link>
                 {
                     currentUser ? 

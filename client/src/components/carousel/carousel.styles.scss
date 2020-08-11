@@ -1,13 +1,13 @@
 .carousel {
     align-items: center;
-    border: 1px solid #F5D020;
+    border: 1px solid #20BF55;
     box-sizing: border-box;
     display: flex;
-    height: 90vh;
+    height: 60vh;
     margin-bottom: 18vh;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 98.8vw;
 
     &:hover {
         cursor: pointer;
@@ -18,10 +18,6 @@
 
         .slider {  
             overflow: hidden;
-            
-            .msg {
-                opacity: 0.9;
-            }
         }
     }
 
@@ -39,47 +35,16 @@
             height: 100%;
             width: 100%;
         }
-
-        .msg {        
-            align-items: center;
-            background: #232526; 
-            background: -webkit-linear-gradient(to left, #414345, #232526);  
-            background: linear-gradient(to left, #414345, #232526); 
-            border: 1px solid #f5D020;
-            display: flex;
-            flex-direction: column;
-            height: 90px;
-            justify-content: center;
-            opacity: 0.6;
-            padding: 0 24px;
-            position: absolute;
-
-            &:hover {
-                opacity: 1;
-            }
-
-            .title {
-                color: #f5D020;
-                font-size: 22px;
-                font-weight: bold;
-                margin-bottom: 6px;
-            }
-
-            .subtitle {
-                font-size: 15px;
-                font-weight: lighter;
-            }
-        }
     }
 
     .btn {
         align-items: center;
-        background: black;
-        border: 1px solid #F5D020;
-        color: #F5D020;
+        background: #232526;
+        border: 1px solid #20BF55;
+        color: #20BF55;
         cursor: pointer;
         font-size: 3vw;
-        height: 9%;
+        height: 15%;
         justify-content: center;
         opacity: 0.6;
         outline: none;

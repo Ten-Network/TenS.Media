@@ -6,33 +6,27 @@ import './carousel.styles.scss';
 var images = [
     {
         id: 1,
-        imageUrl: 'https://images.unsplash.com/photo-1477659803863-c1bf91b34c90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        msg: 'Halloween Sale'
+        imageUrl: 'https://www.bigbasket.com/media/uploads/banner_images/2008007_apples_460.jpg'
     },
     {
         id: 2,
-        imageUrl: 'https://images.unsplash.com/photo-1577083753695-e010191bacb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        msg: 'Diwali Sale'
+        imageUrl: 'https://www.bigbasket.com/media/uploads/banner_images/2008270_protein-corner_460.jpg'
     },
     {
         id: 3,
-        imageUrl: 'https://images.unsplash.com/photo-1545048702-79362596cdc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        msg: 'Christamas Sale'
+        imageUrl: 'https://www.bigbasket.com/media/uploads/banner_images/2008011_bb-home_460.jpg'
     },
     {
         id: 4,
-        imageUrl: 'https://images.unsplash.com/photo-1587642303371-96accbf47448?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        msg: 'Holi Sale'
+        imageUrl: 'https://www.bigbasket.com/media/uploads/banner_images/2008015_tea-snacking-range_460.jpg'
     },
     {
         id: 5,
-        imageUrl: 'https://images.unsplash.com/photo-1590337797479-f208d2ae1965?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        msg: 'Eid Sale'
+        imageUrl: 'https://www.bigbasket.com/media/uploads/banner_images/2008012_kitchen-essentials_460.jpg'
     },
     {
         id: 6,
-        imageUrl: 'https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-        msg: 'Back to School Sale'
+        imageUrl: 'https://www.bigbasket.com/media/uploads/banner_images/2008016_breakfast-range_460.jpg'
     }
 ];
 
@@ -47,26 +41,23 @@ const Carousel = ({ history }) => {
 
     return (
         <div className='carousel'>
-            {images.map(({ id, imageUrl, msg }) => (
-                <div 
-                    key={id} 
-                    className='slider'
-                    style={{
-                        transform: `translateX(${x}%)`
-                    }}
-                >
+                {images.map(({ id, imageUrl, msg }) => (
                     <div 
-                        className='img' 
+                        key={id} 
+                        className='slider'
                         style={{
-                            backgroundImage: `url(${imageUrl})`
-                        }} 
-                    />
-                    <div onClick={() => history.push('/shop')} className='msg'>
-                        <h1 className='title'>{msg.toUpperCase()}</h1>
-                        <h2 className='subtitle'>SHOP NOW</h2>
-                    </div>
+                            transform: `translateX(${x}%)`
+                        }}
+                        onClick={() => history.push('/shop')}
+                    >
+                        <div 
+                            className='img' 
+                            style={{
+                                backgroundImage: `url(${imageUrl})`
+                            }} 
+                        />
                 </div>
-            ))}
+                ))}
             <button 
                 id='left' 
                 onClick={goLeft}

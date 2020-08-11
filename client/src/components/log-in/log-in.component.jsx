@@ -103,12 +103,6 @@ class LogIn extends React.Component {
                             >
                                 sign in
                             </CustomButton>
-                            <CustomButton 
-                                type='submit' 
-                                isGoogleSignIn
-                            >
-                                sign in with google
-                            </CustomButton>
                         </div>
                         <h4 className='option'>
                             Don't have an account? 

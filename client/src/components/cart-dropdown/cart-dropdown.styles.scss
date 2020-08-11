@@ -1,6 +1,6 @@
 .cart-dropdown {
     background-color: #232526;
-    border: 1px solid #F5D020;
+    border: 1px solid #20BF55;
     display: flex;
     flex-direction: column;
     height: 400px;
@@ -19,15 +19,15 @@
     }
 
     button {
-        background-color: #F5D020;
+        background-color: #20BF55;
         border: 1px solid #232526;
         color: #232526;
         margin-top: auto;
 
         &:hover {
             background-color: #232526;
-            border: 1px solid #F5D020;
-            color: #F5D020;
+            border: 1px solid #20BF55;
+            color: #20BF55;
         }
     }
 
