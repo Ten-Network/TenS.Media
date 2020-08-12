@@ -67,4 +67,15 @@
         right: 0;
         @extend .btn;
     }
+
+    @media screen and (max-width: 800px) {
+        .slider {         
+            .img {
+                background-position-x: right;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
 }

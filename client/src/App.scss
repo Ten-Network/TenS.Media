@@ -9,6 +9,10 @@ body {
     background: linear-gradient(to left, #414345, #232526); 
     color: #20BF55; 
     padding: 20px 60px;
+
+    @media screen and (max-width: 800px) {
+        padding: 10px;
+    }
 }
 
 a {

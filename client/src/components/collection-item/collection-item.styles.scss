@@ -6,6 +6,18 @@
     position: relative;
     width: 21vw;
 
+    @media screen and (max-width: 800px) {
+        width: 40vw;
+        &:hover {
+          .image {
+            opacity: unset;
+          }
+          button {
+            opacity: unset;
+          }
+        }
+    }
+
     .img {
         background-position: center;
         background-size: cover;
@@ -22,6 +34,14 @@
         position: absolute;
         top: 255px;
         width: 81%;
+
+        @media screen and (max-width: 800px) {
+            display: block;
+            opacity: 0.9;
+            height: 50px;
+            min-width: unset;
+            padding: 0 10px;
+        }
     }
 
     &:hover {

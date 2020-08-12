@@ -36,7 +36,7 @@ class Homepage extends React.Component {
     render() {
         return (
             <div className='homepage'>
-                <Carousel name={'homepageSlides'} />
+                <Carousel className='carousel' name={'homepageSlides'} />
                 <Directory />
             </div>
         )

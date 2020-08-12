@@ -65,7 +65,7 @@ const Header  = ({ currentUser, hidden }) => {
                             <Link className='option' to='/signin'>
                                 Sign In
                             </Link>
-                            <Link className='option' to='/signup'>
+                            <Link className='option hidden' to='/signup'>
                                 Sign Up
                             </Link>
                         </div>

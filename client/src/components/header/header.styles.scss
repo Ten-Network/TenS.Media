@@ -5,11 +5,22 @@
     margin-bottom: 24px;
     width: 100%;
 
+    @media screen and (max-width: 800px) {
+        hieight: 60px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
     .logo-container {
         height: 100%;
         margin-top: 12px;
         padding: 0 24px 24px 24px;
         width: 70px;
+
+        @media screen and (max-width: 800px) {
+            width: 50px;
+            padding: 0px;
+        }
 
         .logo {
             height: 45px;
@@ -23,6 +34,14 @@
         height: 100%;
         justify-content: flex-end;
         width: 50%;
+
+        @media screen and (max-width: 800px) {
+            width: 100%;
+
+            & .hidden {
+                display: none;
+            }
+        }
 
         .option {
             cursor: pointer;

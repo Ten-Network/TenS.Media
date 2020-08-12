@@ -5,6 +5,10 @@
     margin: 51px auto;
     width: 60%;
 
+    @media screen and (max-width: 800px) {
+        width: 90%;
+    }
+
     .checkout-header {
         border-bottom: 1px solid #20BF55;
         display: flex;
@@ -15,6 +19,14 @@
         .header-block {
             text-transform: capitalize;
             width: 23%;
+
+            @media screen and (max-width: 800px) {
+                width: 22%
+                
+                &:last-child {
+                  width: 12%;
+                }
+            }
     
             &:last-child {
                 width: 8%;
