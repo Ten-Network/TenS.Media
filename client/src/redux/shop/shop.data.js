@@ -336,271 +336,271 @@ const SHOP_DATA = {
     items: [
       {
         id: 49,
-        title: 'Apple - D.C. Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
-        price: 189
+        title: 'Nutritional Supplement',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/30003629_5-protinex-nutritional-supplement-high-protein-original.jpg',
+        price: 355
       },
       {
         id: 50,
-        title: 'Apple - Royal Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
-        price: 197
+        title: 'Protein Milkshake',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40184798_4-raw-pressery-protein-milkshake-choco-mint.jpg',
+        price: 80
       },
       {
         id: 51,
-        title: 'Apple - D.C. Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
-        price: 173
+        title: 'Protein Drink',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40121938_2-horlicks-high-protein-drink-chocolate-protein.jpg',
+        price: 465
       },
       {
         id: 52,
-        title: 'Apple - Royal Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
-        price: 126
+        title: 'Protein Bar',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40095301_16-yoga-bar-protein-variety-bar-chocolate-brownie-cranberry-almond-fudge-hazelnut.jpg',
+        price: 615
       },
       {
         id: 53,
-        title: 'Apple - Fuji',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
-        price: 209
+        title: 'Classic Bar',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/1208444_4-ritebite-max-protein-daily-choco-classic-bar.jpg',
+        price: 138
       },
       {
         id: 54,
-        title: 'Apple - Royal Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
-        price: 219
+        title: 'Malt Beverage',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/302425_7-amul-pro-whey-protein-malt-beverage-health-drink-with-dha-chocolate.jpg',
+        price: 175
       },
       {
         id: 55,
-        title: 'Apple - D.C. Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
-        price: 209
+        title: 'Breakfast Protein',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40131392_4-yoga-bar-breakfast-protein-variety-bar-almond-coconut-apricot-fig-blueberry-apple-cinnamon.jpg',
+        price: 255
       },
       {
         id: 56,
-        title: 'Apple - Fuji Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
-        price: 209
+        title: 'Energy Bar',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/30012170_10-yoga-bar-multigrain-energy-bar-chocolate-chunk-nut.jpg',
+        price: 35
       }
     ]
   },
   cleaning: {
     id: 8,
-    title: 'Apples',
+    title: 'Cleaning',
     routetitle: 'cleaning',
     items: [
       {
         id: 57,
-        title: 'Apple - D.C. Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
-        price: 189
+        title: 'Toilet Cleaner - Original',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40130349_7-bb-home-disinfectant-toilet-cleaner-original.jpg',
+        price: 69
       },
       {
         id: 58,
-        title: 'Apple - Royal Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
-        price: 197
+        title: 'Toilet Cleaner - Rose',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40130350_6-bb-home-disinfectant-toilet-cleaner-rose.jpg',
+        price: 69
       },
       {
         id: 59,
-        title: 'Apple - D.C. Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
-        price: 173
+        title: 'Toilet Cleaner - Lemon',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40130351_6-bb-home-disinfectant-toilet-cleaner-lemon.jpg',
+        price: 69
       },
       {
         id: 60,
-        title: 'Apple - Royal Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
-        price: 126
+        title: 'Toilet Cleaner - Pro',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40130352_6-bb-home-disinfectant-toilet-cleaner-pro-colour-changing-formula.jpg',
+        price: 75
       },
       {
         id: 61,
-        title: 'Apple - Fuji',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
-        price: 209
+        title: 'Floor Cleaner - Pine',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40130353_9-bb-home-disinfectant-floor-cleaner-pine.jpg',
+        price: 75
       },
       {
         id: 62,
-        title: 'Apple - Royal Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
-        price: 219
+        title: 'Floor Cleaner - Neem',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40130354_6-bb-home-disinfectant-floor-cleaner-neem.jpg',
+        price: 75
       },
       {
         id: 63,
-        title: 'Apple - D.C. Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
-        price: 209
+        title: 'Floor Cleaner - Floral',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40130355_6-bb-home-disinfectant-floor-cleaner-floral.jpg',
+        price: 75
       },
       {
         id: 64,
-        title: 'Apple - Fuji Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
-        price: 209
+        title: 'Floor Cleaner - Citrus',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40130356_7-bb-home-disinfectant-floor-cleaner-citrus.jpg',
+        price: 75
       }
     ]
   },
   snacks: {
     id: 9,
-    title: 'Apples',
-    routetitle: 'kitchen',
+    title: 'Snacks',
+    routetitle: 'snacks',
     items: [
       {
         id: 65,
-        title: 'Apple - D.C. Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
-        price: 189
+        title: 'Ragi Sticks',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40167617_6-gooddiet-ragi-sticks-achari-masala.jpg',
+        price: 17
       },
       {
         id: 66,
-        title: 'Apple - Royal Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
-        price: 197
+        title: 'Multi Grain Puffs',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40167620_6-gooddiet-multi-grain-puffs-butter-makhana.jpg',
+        price: 17
       },
       {
         id: 67,
-        title: 'Apple - D.C. Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
-        price: 173
+        title: 'Honey Oats Cookies',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40177078_5-tasties-honey-oats-cookies.jpg',
+        price: 27
       },
       {
         id: 68,
-        title: 'Apple - Royal Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
-        price: 126
+        title: 'Roasted Chana',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40112402_6-gooddiet-snacks-roasted-chana-jor-lime.jpg',
+        price: 79
       },
       {
         id: 69,
-        title: 'Apple - Fuji',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
-        price: 209
+        title: 'Rusk',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40106015_11-tasties-rusk-suji-elaichi.jpg',
+        price: 49
       },
       {
         id: 70,
-        title: 'Apple - Royal Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
-        price: 219
+        title: 'Berries',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104684_10-fresho-signature-just-berries-dehydrated-dry-fruits.jpg',
+        price: 99
       },
       {
         id: 71,
-        title: 'Apple - D.C. Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
-        price: 209
+        title: 'Cachew Cookies',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40177077_5-tasties-butter-cashew-cookies.jpg',
+        price: 27
       },
       {
         id: 72,
-        title: 'Apple - Fuji Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
-        price: 209
+        title: 'Bikaneri Bhujia',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40115848_12-tasties-bikaneri-bhujia-sev.jpg',
+        price: 33
       }
     ]
   },
   kitchen: {
     id: 10,
-    title: 'Apples',
+    title: 'Kitchen',
     routetitle: 'kitchen',
     items: [
       {
         id: 73,
-        title: 'Apple - D.C. Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
-        price: 189
+        title: 'LED Tubelight',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40181713_1-nippo-rechargeable-led-tubelight-baton-8w-cool-daylight.jpg',
+        price: 799
       },
       {
         id: 74,
-        title: 'Apple - Royal Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
-        price: 197
+        title: 'Pressure Cooker',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104403_2-prestige-nakshatra-alpha-stainless-steel-pressure-cooker-20551.jpg',
+        price: 2099
       },
       {
         id: 75,
-        title: 'Apple - D.C. Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
-        price: 173
+        title: 'Insulated Flask',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40188979_2-bb-home-arctic-steel-insulated-vacuum-flask.jpg',
+        price: 449
       },
       {
         id: 76,
-        title: 'Apple - Royal Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
-        price: 126
+        title: 'Plastic Container',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40136229_2-princeware-prince-pilot-plastic-container-set-blue.jpg',
+        price: 319
       },
       {
         id: 77,
-        title: 'Apple - Fuji',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
-        price: 209
+        title: 'Coffee Mug',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40134645_2-iveo-100-melamine-glory-coffee-mug-set-blue.jpg',
+        price: 439
       },
       {
         id: 78,
-        title: 'Apple - Royal Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
-        price: 219
+        title: 'Spin Mop',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40172986_10-bb-home-360-degree-spin-mop-bucket-with-2-refills-blue.jpg',
+        price: 699
       },
       {
         id: 79,
-        title: 'Apple - D.C. Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
-        price: 209
+        title: 'Grass Broom',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40175060_8-bb-home-natural-grass-broomphool-jhadu.jpg',
+        price: 99
       },
       {
         id: 80,
-        title: 'Apple - Fuji Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
-        price: 209
+        title: 'Copper Water Bottle',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40159811_3-frestol-copper-water-fliptop-bottle.jpg',
+        price: 529
       }
     ]
   },
   breakfast: {
     id: 11,
-    title: 'Apples',
+    title: 'Breakfast',
     routetitle: 'breakfast',
     items: [
       {
         id: 81,
-        title: 'Apple - D.C. Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033824_17-fresho-apple-red-deliciouswashington-regular.jpg',
-        price: 189
+        title: 'Idli Dosa Batter',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40096525_7-fresho-idly-dosa-batter.jpg',
+        price: 74
       },
       {
         id: 82,
-        title: 'Apple - Royal Regular',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033823_15-fresho-apple-royal-gala-regular.jpg',
-        price: 197
+        title: 'Choco Flakes',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40194168_5-bb-royal-choco-flakes.jpg',
+        price: 149
       },
       {
         id: 83,
-        title: 'Apple - D.C. Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075384_10-fresho-apple-red-deliciouswashington-economy.jpg',
-        price: 173
+        title: 'Oats',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40194170_6-bb-royal-oats.jpg',
+        price: 165
       },
       {
         id: 84,
-        title: 'Apple - Royal Economy',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000207_19-fresho-watermelon-small.jpg',
-        price: 126
+        title: 'Nuts Delight',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40194171_6-bb-royal-muesli-nuts-delight.jpg',
+        price: 249
       },
       {
         id: 85,
-        title: 'Apple - Fuji',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40033815_20-fresho-apple-fuji-regular.jpg',
-        price: 209
+        title: 'Millet Muesli',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40131424_8-gooddiet-multi-millet-muesli-with-fruits-nuts-berries.jpg',
+        price: 249
       },
       {
         id: 86,
-        title: 'Apple - Royal Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40105380_16-fresho-apple-royal-gala-premium.jpg',
-        price: 219
+        title: 'Peanut Butter',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40176666_3-happy-chef-peanut-butter-creamy-100-natural-unsweetened.jpg',
+        price: 135
       },
       {
         id: 87,
-        title: 'Apple - D.C. Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000152_18-fresho-papaya-medium.jpg',
-        price: 209
+        title: 'Breakfast Mix',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40112435_4-gooddiet-breakfast-mix-oats-dosa.jpg',
+        price: 119
       },
       {
         id: 88,
-        title: 'Apple - Fuji Premium',
-        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40104703_19-fresho-apple-fuji-premium.jpg',
-        price: 209
+        title: 'Quinoa Muesli',
+        imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40131423_4-gooddiet-quinoa-muesli-with-nuts-seeds.jpg',
+        price: 25
       }
     ]
   }
