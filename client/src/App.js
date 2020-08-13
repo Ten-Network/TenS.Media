@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 
 import Header from './components/header/header.component';
+import ErrorBoundary from './components/error-boundary/error-boundary.component';
 import Spinner from './components/spinner/spinner.component';
 
 import { setCurrentUser } from './redux/user/user.actions';
@@ -45,13 +46,15 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Suspense fallback={<Spinner />}>
-            <Route exact path='/' component={Homepage} />
-            <Route path='/shop' component={ShopPage} /> 
-            <Route path='/signin' component={SignInPage} /> 
-            <Route path='/signup' component={SignUpPage} /> 
-            <Route path='/checkout' component={CheckoutPage} /> 
-          </Suspense>
+          <ErrorBoundary>
+            <Suspense fallback={<Spinner />}>
+              <Route exact path='/' component={Homepage} />
+              <Route path='/shop' component={ShopPage} /> 
+              <Route path='/signin' component={SignInPage} /> 
+              <Route path='/signup' component={SignUpPage} /> 
+              <Route path='/checkout' component={CheckoutPage} /> 
+            </Suspense>
+          </ErrorBoundary>
         </Switch>
       </div>
     );
