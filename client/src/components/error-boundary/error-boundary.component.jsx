@@ -19,7 +19,7 @@ class ErrorBoundary extends React.Component {
         if (this.state.hasErrored) {
             return (
                 <div className='error-image-overlay'>
-                    <img src='https://i.imgur.com/qIufhof.png' className='error-image' />
+                    <img src='https://i.imgur.com/qIufhof.png' alt='error' className='error-image' />
                     <div className='error-image-text'>Caution! This Page is Cordoned Off</div>
                     <div className='error-image-description'>
                         The earthquake was not good to the bike lane on your way to work. A large gap in the 
