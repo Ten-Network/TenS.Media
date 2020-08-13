@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
