@@ -17,7 +17,7 @@ const SignInPage = lazy(() => import('./pages/sign-in/sign-in.component'));
 const SignUpPage = lazy(() => import('./pages/sign-up/sign-up.component'));
 const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
 
-class App extends React.Component {
+class App extends React.PureComponent {
   componentDidMount() {
     this.isLoggedIn();
   }

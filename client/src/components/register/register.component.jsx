@@ -7,7 +7,7 @@ import CustomButton from '../custom-button/custom-button.component';
 
 import './register.styles.scss';
 
-class Register extends React.Component {
+class Register extends React.PureComponent {
     constructor() {
         super();
 

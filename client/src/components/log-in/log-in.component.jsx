@@ -7,7 +7,7 @@ import CustomButton from '../custom-button/custom-button.component';
 
 import './log-in.styles.scss';
 
-class LogIn extends React.Component {
+class LogIn extends React.PureComponent {
     constructor() {
         super();
 
