@@ -2,7 +2,7 @@ const SHOP_DATA = {
   fasting: {
     id: 1,
     title: 'Fasting Essentials',
-    routetitle: 'fasting',
+    routeTitle: 'fasting',
     items: [
       {
         id: 1,
@@ -57,7 +57,7 @@ const SHOP_DATA = {
   sweets: {
     id: 2,
     title: 'Chocolates & Sweets',
-    routetitle: 'sweets',
+    routeTitle: 'sweets',
     items: [
       {
         id: 9,
@@ -112,7 +112,7 @@ const SHOP_DATA = {
   pooja: {
     id: 3,
     title: 'Pooja Needs',
-    routetitle: 'pooja',
+    routeTitle: 'pooja',
     items: [
       {
         id: 17,
@@ -167,7 +167,7 @@ const SHOP_DATA = {
   vegetables: {
     id: 4,
     title: 'Daily Vegetables',
-    routetitle: 'vegetables',
+    routeTitle: 'vegetables',
     items: [
       {
         id: 25,
@@ -222,7 +222,7 @@ const SHOP_DATA = {
   fruits: {
     id: 5,
     title: 'Fresh Fruits',
-    routetitle: 'fruits',
+    routeTitle: 'fruits',
     items: [
       {
         id: 33,
@@ -277,7 +277,7 @@ const SHOP_DATA = {
   apples: {
     id: 6,
     title: 'Apples',
-    routetitle: 'apples',
+    routeTitle: 'apples',
     items: [
       {
         id: 41,
@@ -332,7 +332,7 @@ const SHOP_DATA = {
   proteins: {
     id: 7,
     title: 'Proteins',
-    routetitle: 'proteins',
+    routeTitle: 'proteins',
     items: [
       {
         id: 49,
@@ -387,7 +387,7 @@ const SHOP_DATA = {
   cleaning: {
     id: 8,
     title: 'Cleaning',
-    routetitle: 'cleaning',
+    routeTitle: 'cleaning',
     items: [
       {
         id: 57,
@@ -442,7 +442,7 @@ const SHOP_DATA = {
   snacks: {
     id: 9,
     title: 'Snacks',
-    routetitle: 'snacks',
+    routeTitle: 'snacks',
     items: [
       {
         id: 65,
@@ -497,7 +497,7 @@ const SHOP_DATA = {
   kitchen: {
     id: 10,
     title: 'Kitchen',
-    routetitle: 'kitchen',
+    routeTitle: 'kitchen',
     items: [
       {
         id: 73,
@@ -552,7 +552,7 @@ const SHOP_DATA = {
   breakfast: {
     id: 11,
     title: 'Breakfast',
-    routetitle: 'breakfast',
+    routeTitle: 'breakfast',
     items: [
       {
         id: 81,
