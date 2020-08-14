@@ -13,9 +13,12 @@ const StripeCheckoutButton = ({ price }) => {
         <StripeCheckout 
             label='Pay Now'
             name='Big Basket'
+            billingAddress
+            shippingAddress
             currency='INR'
             description={`Your Total is $${price}`}
             amount={priceForStripe}
+            panelLable='Pay Now'
             token={onToken}
             stripeKey={publichableKey}
         />
