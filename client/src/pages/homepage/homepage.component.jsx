@@ -9,7 +9,7 @@ import { setCurrentUser } from '../../redux/user/user.actions';
 
 import './homepage.styles.scss';
 
-class Homepage extends React.PureComponent {
+class Homepage extends React.Component {
     componentDidMount() {
         this.isLoggedIn();
     }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './error-boundary.styles.scss';
 
-class ErrorBoundary extends React.PureComponent {
+class ErrorBoundary extends React.Component {
     constructor() {
         super();
 
