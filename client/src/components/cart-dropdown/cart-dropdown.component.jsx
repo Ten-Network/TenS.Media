@@ -32,11 +32,7 @@ const CartDropdown = ({ cartItems, history, dispatch }) => {
             <CustomButton 
                 onClick={() => {
                     dispatch(toggleCartHidden())
-                    user.current ? (
-                        history.push('/checkout')
-                    ) : (
-                        history.push('/signin')
-                    )
+                    history.push('/checkout')
                 }
             }>
                 go to checkout
