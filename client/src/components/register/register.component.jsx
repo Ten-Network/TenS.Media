@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
+import { Link, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+
+import { register } from '../../redux/user/user.actions';
 
 import './register.styles.scss';
 
@@ -34,43 +37,22 @@ class Register extends React.Component {
         }
     }
 
-    handleSubmit = async event => {
+    handleSubmit = event => {
         event.preventDefault();
 
-        const { name, email, password, confirmPassword } = this.state;
+        const { password, confirmPassword } = this.state;
 
         if (password !== confirmPassword) {
             alert('Passwords do not match');
         } else {
-            const newUser = {
-                name: name,
-                username: email,
-                email: email,
-                password: password
-            }
+            this.props.register(this.state);
 
-            try {
-                const config = {
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                };
-
-                const body = JSON.stringify(newUser);
-
-                await axios.post('/register', body, config);
-
-                this.redirect();
-
-                this.setState({
-                    name: '',
-                    email: '',
-                    password: '',
-                    confirmPassword: '',
-                });
-            } catch (error) {
-                alert(error.response.data);
-            }
+            this.setState({
+                name: '',
+                email: '',
+                password: '',
+                confirmPassword: ''
+            });    
         }
     };
 
@@ -136,4 +118,11 @@ class Register extends React.Component {
     }
 }
 
-export default Register;
+const mapDispatchToProps = dispatch => ({
+    register: userCredentials => dispatch(register(userCredentials)) 
+});
+
+export default connect(
+    null,
+    mapDispatchToProps
+)(Register);

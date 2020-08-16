@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
+import { Link, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux'; 
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+
+import { logIn } from '../../redux/user/user.actions';
 
 import './log-in.styles.scss';
 
@@ -32,37 +35,15 @@ class LogIn extends React.Component {
         }
     }
 
-    handleSubmit = async event => {
+    handleSubmit = event => {
         event.preventDefault();
 
-        const { email, password } = this.state;
-    
-        const newUser = {
-            username: email,
-            email: email,
-            password: password
-        }
+        this.props.logIn(this.state);       
 
-        try {
-            const config = {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            };
-
-            const body = JSON.stringify(newUser);
-
-            await axios.post('/login', body, config);
-
-            this.redirect();
-
-            this.setState({
-                email: '',
-                password: '',
-            });
-        } catch (error) {
-            alert(error.response.data);
-        }
+        this.setState({
+            email: '',
+            password: '',
+        });
     };
 
     handleChange = event => {
@@ -117,4 +98,11 @@ class LogIn extends React.Component {
     }
 };
 
-export default LogIn;
+const mapDispatchToProps = dispatch => ({
+    logIn: userCredentials => dispatch(logIn(userCredentials))
+});
+
+export default connect(
+    null,
+    mapDispatchToProps
+)(LogIn);
