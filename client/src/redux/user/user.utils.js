@@ -1,26 +1,5 @@
 import axios from 'axios';
 
-import { clearCart } from '../cart/cart.actions';
-import { setCurrentUser } from './user.actions';
-
-const checkUserSession = async () => {
-    const response = await axios.get('/authenticated');
-
-    const user = response.data.user;
-
-    if (user) {
-      setCurrentUser({
-        id: user._id,
-        cart: user.cart,
-        name: user.name,
-        email: user.email
-      });
-    } else {
-        clearCart();
-        setCurrentUser(null);
-    }
-}
-
 export const registerUser = async ({ name, email, password }) => {
     try {
         const newUser = {
@@ -39,8 +18,6 @@ export const registerUser = async ({ name, email, password }) => {
         const body = JSON.stringify(newUser);
 
         await axios.post('/register', body, config);
-
-        checkUserSession();
     } catch (error) {
         alert(error.response.data);
     }
@@ -63,8 +40,6 @@ export const logInUser = async ({ email, password }) => {
         const body = JSON.stringify(newUser);
 
         await axios.post('/login', body, config);
-
-        checkUserSession();
     } catch (error) {
         alert(error.response.data);
     }
@@ -93,8 +68,6 @@ export const logOutUser = async () => {
         const body = JSON.stringify(data);
 
         await axios.post('/logout', body, config);
-
-        checkUserSession();
     } catch (error) {
         alert(error.response.data);
     }

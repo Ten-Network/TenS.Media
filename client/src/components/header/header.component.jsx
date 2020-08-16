@@ -9,16 +9,18 @@ import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
 import { logOut } from '../../redux/user/user.actions';
+import { clearCart } from '../../redux/cart/cart.actions';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 import './header.styles.scss';
 
-const Header  = ({ currentUser, hidden, logOut, history }) => {
+const Header  = ({ currentUser, hidden, logOut, clearCart, history }) => {
     const signOut = event => {
         event.preventDefault();
 
         logOut();
+        clearCart();
 
         const timeFunction = () => {
             setTimeout(() => { 
@@ -68,7 +70,8 @@ const mapStateToProps = createStructuredSelector({
 }); 
 
 const mapDispatchToProps = dispatch => ({
-    logOut: () => dispatch(logOut())
+    logOut: () => dispatch(logOut()),
+    clearCart: () => dispatch(clearCart())
 });
 
 export default withRouter(
