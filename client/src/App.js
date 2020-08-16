@@ -38,7 +38,7 @@ const App = ({ currentUser, setCurrentUser }) => {
       setCurrentUser(user);
     }
     isLoggedIn();
-  }, []);
+  }, [setCurrentUser]);
   
   return (
     <div>
