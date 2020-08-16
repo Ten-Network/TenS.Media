@@ -34,7 +34,7 @@ class Register extends React.Component {
             const timeFunction = () => {
                 setTimeout(() => { 
                     this.props.history.push('/')
-                }, 3000);
+                }, 1800);
             }
             timeFunction();
 
