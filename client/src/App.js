@@ -1,13 +1,15 @@
 import React, { lazy, Suspense } from 'react';
 import axios from 'axios';
+import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Header from './components/header/header.component';
 import ErrorBoundary from './components/error-boundary/error-boundary.component';
 import Spinner from './components/spinner/spinner.component';
 
 import { setCurrentUser } from './redux/user/user.actions';
+import { selectCurrentUser } from './redux/user/user.selectors';
 
 import './App.scss';
 
@@ -50,9 +52,36 @@ class App extends React.Component {
             <Suspense fallback={<Spinner />}>
               <Route exact path='/' component={Homepage} />
               <Route path='/shop' component={ShopPage} /> 
-              <Route path='/signin' component={SignInPage} /> 
-              <Route path='/signup' component={SignUpPage} /> 
-              <Route path='/checkout' component={CheckoutPage} /> 
+              <Route 
+                exact 
+                path='/signin' 
+                render={() => 
+                  this.props.currentUser ? (
+                    <Redirect to='/' />
+                  ) : (
+                    <SignInPage />) 
+                } 
+              />
+              <Route 
+                exact 
+                path='/signup' 
+                render={() => 
+                  this.props.currentUser ? (
+                    <Redirect to='/' />
+                  ) : (
+                    <SignUpPage />) 
+                } 
+              />
+              <Route 
+                exact 
+                path='/checkout' 
+                render={() => 
+                  this.props.currentUser ? (
+                    <CheckoutPage />
+                  ) : (
+                    <Redirect to='/signin' />) 
+                } 
+              />
             </Suspense>
           </ErrorBoundary>
         </Switch>
@@ -61,11 +90,15 @@ class App extends React.Component {
   }
 };
 
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
+});
+
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(App);

@@ -1,6 +1,5 @@
 import React from 'react';
-import axios from 'axios';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'; 
 
 import FormInput from '../form-input/form-input.component';
@@ -17,21 +16,6 @@ class LogIn extends React.Component {
         this.state = {
             email: '',
             password: '',
-            redirectTo: null
-        }
-    }
-
-    componentDidMount() {
-        this.redirect();
-    }
-
-    redirect = async () => {
-        const response = await axios.get('/authenticated');
-
-        if (response.data.user) {
-            this.setState({
-                redirectTo: '/'
-            });
         }
     }
 
@@ -53,48 +37,44 @@ class LogIn extends React.Component {
     };
 
     render() {
-        if (this.state.redirectTo) {
-            return <Redirect to={this.state.redirectTo} />
-        } else {
-            return (
-                <div className='log-in'>
-                    <h2 className='title'>Sign In</h2>
-                    <span>Sign into your account</span>
+        return (
+            <div className='log-in'>
+                <h2 className='title'>Sign In</h2>
+                <span>Sign into your account</span>
 
-                    <form onSubmit={this.handleSubmit}>
-                        <FormInput 
-                            name='email' 
-                            type='email'
-                            label='Email'
-                            handleChange={this.handleChange}
-                            value={this.state.email}
-                            required
-                        />
-                        <FormInput
-                            name='password' 
-                            type='password'
-                            label='Password'
-                            handleChange={this.handleChange}
-                            value={this.state.password}
-                            minLength='6'
-                        />
-                        <div className='buttons'>
-                            <CustomButton 
-                                type='submit'
-                            >
-                                sign in
-                            </CustomButton>
-                        </div>
-                        <h4 className='option'>
-                            Don't have an account? 
-                            <Link className='route' to='/signup'>
-                                Sign Up
-                            </Link>
-                        </h4>
-                    </form>
-                </div>
-            )
-        }
+                <form onSubmit={this.handleSubmit}>
+                    <FormInput 
+                        name='email' 
+                        type='email'
+                        label='Email'
+                        handleChange={this.handleChange}
+                        value={this.state.email}
+                        required
+                    />
+                    <FormInput
+                        name='password' 
+                        type='password'
+                        label='Password'
+                        handleChange={this.handleChange}
+                        value={this.state.password}
+                        minLength='6'
+                    />
+                    <div className='buttons'>
+                        <CustomButton 
+                            type='submit'
+                        >
+                            sign in
+                        </CustomButton>
+                    </div>
+                    <h4 className='option'>
+                        Don't have an account? 
+                        <Link className='route' to='/signup'>
+                            Sign Up
+                        </Link>
+                    </h4>
+                </form>
+            </div>
+        );
     }
 };
 
