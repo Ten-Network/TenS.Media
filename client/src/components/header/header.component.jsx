@@ -23,7 +23,7 @@ const Header  = ({ currentUser, hidden, logOut, history }) => {
         const timeFunction = () => {
             setTimeout(() => { 
                 history.push('/signin')
-            }, 750);
+            }, 1000);
         }
         timeFunction();
     }

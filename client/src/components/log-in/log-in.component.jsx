@@ -22,12 +22,14 @@ class LogIn extends React.Component {
     handleSubmit = event => {
         event.preventDefault();
 
-        this.props.logIn(this.state);   
+        const { logIn } = this.props;
+
+        logIn(this.state);   
         
         const timeFunction = () => {
             setTimeout(() => { 
                 this.props.history.push('/')
-            }, 750);
+            }, 1000);
         }
         timeFunction();
 

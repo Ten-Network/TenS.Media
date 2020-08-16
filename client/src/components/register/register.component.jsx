@@ -29,7 +29,9 @@ class Register extends React.Component {
         if (password !== confirmPassword) {
             alert('Passwords do not match');
         } else {
-            this.props.register(this.state);
+            const { register } = this.props;
+
+            register(this.state);
 
             const timeFunction = () => {
                 setTimeout(() => { 
