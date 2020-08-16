@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux'; 
 
 import FormInput from '../form-input/form-input.component';
@@ -22,7 +22,14 @@ class LogIn extends React.Component {
     handleSubmit = event => {
         event.preventDefault();
 
-        this.props.logIn(this.state);       
+        this.props.logIn(this.state);   
+        
+        const timeFunction = () => {
+            setTimeout(() => { 
+                this.props.history.push('/')
+            }, 3000);
+        }
+        timeFunction();
 
         this.setState({
             email: '',
@@ -82,7 +89,9 @@ const mapDispatchToProps = dispatch => ({
     logIn: userCredentials => dispatch(logIn(userCredentials))
 });
 
-export default connect(
-    null,
-    mapDispatchToProps
-)(LogIn);
+export default withRouter(
+    connect(
+        null,
+        mapDispatchToProps
+    )(LogIn)
+);

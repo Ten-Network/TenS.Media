@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import FormInput from '../form-input/form-input.component';
@@ -30,6 +30,13 @@ class Register extends React.Component {
             alert('Passwords do not match');
         } else {
             this.props.register(this.state);
+
+            const timeFunction = () => {
+                setTimeout(() => { 
+                    this.props.history.push('/')
+                }, 3000);
+            }
+            timeFunction();
 
             this.setState({
                 name: '',
@@ -102,7 +109,9 @@ const mapDispatchToProps = dispatch => ({
     register: userCredentials => dispatch(register(userCredentials)) 
 });
 
-export default connect(
-    null,
-    mapDispatchToProps
-)(Register);
+export default withRouter(
+    connect(
+        null,
+        mapDispatchToProps
+    )(Register)
+);

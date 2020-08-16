@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+import { clearCart } from '../cart/cart.actions';
 import { setCurrentUser } from './user.actions';
 
 const checkUserSession = async () => {
@@ -15,6 +16,7 @@ const checkUserSession = async () => {
         email: user.email
       });
     } else {
+        clearCart();
         setCurrentUser(null);
     }
 }
