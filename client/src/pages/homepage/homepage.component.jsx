@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 
@@ -9,38 +9,33 @@ import { setCurrentUser } from '../../redux/user/user.actions';
 
 import './homepage.styles.scss';
 
-class Homepage extends React.Component {
-    componentDidMount() {
-        this.isLoggedIn();
-    }
-
-    isLoggedIn = async () => {
-        const { setCurrentUser } = this.props;
-
-        const response = await axios.get('/authenticated');
-
-        const user = response.data.user;
-
-        if (user) {
-            setCurrentUser({
+const Homepage  = ({ setCurrentUser }) => {
+    useEffect(() => {
+        const isLoggedIn = async () => {
+            const response = await axios.get('/authenticated');
+    
+            const user = response.data.user;
+    
+            if (user) {
+                setCurrentUser({
                 id: user._id,
                 cart: user.cart,
                 name: user.name,
                 email: user.email
-            });
+                });
+            }
+        
+            setCurrentUser(user);
         }
+        isLoggedIn();
+    }, [setCurrentUser]);
 
-        setCurrentUser(user);
-    }
-
-    render() {
-        return (
-            <div className='homepage'>
-                <Carousel className='carousel' name={'homepageSlides'} />
-                <Directory />
-            </div>
-        )
-    }
+    return (
+        <div className='homepage'>
+            <Carousel className='carousel' name={'homepageSlides'} />
+            <Directory />
+        </div>
+    );
 }
 
 const mapDispatchToProps = dispatch => ({
