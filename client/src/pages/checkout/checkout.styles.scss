@@ -10,7 +10,7 @@
     }
 
     .checkout-header {
-        border-bottom: 1px solid #20BF55;
+        border-bottom: 1px solid #414141;
         display: flex;
         justify-content: space-between;
         padding: 9px 0;
@@ -23,7 +23,7 @@
             @media screen and (max-width: 800px) {
                 width: 22%
                 
-                &:last-child {
+                last-child {
                   width: 12%;
                 }
             }

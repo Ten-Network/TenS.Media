@@ -1,4 +1,5 @@
 .header {
+    align-items: center;
     display: flex;
     height: 60px;
     justify-content: space-between;
@@ -13,7 +14,7 @@
 
     .logo-container {
         height: 100%;
-        margin-top: 12px;
+        margin-top: 30px;
         padding: 0 24px 24px 24px;
         width: 70px;
 
@@ -25,6 +26,19 @@
         .logo {
             height: 45px;
             width: 45px;
+        }
+    }
+
+    .search {
+        border: 1px solid black;
+        display: flex;
+        height: 3vh;
+        justify-content: flex-end;
+        padding: 6px;
+        width: 60vw;
+
+        &:focus {
+            outline: none;
         }
     }
 

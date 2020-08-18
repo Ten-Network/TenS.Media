@@ -29,7 +29,7 @@ class LogIn extends React.Component {
         const timeFunction = () => {
             setTimeout(() => { 
                 this.props.history.push('/')
-            }, 1000);
+            }, 1500);
         }
         timeFunction();
 

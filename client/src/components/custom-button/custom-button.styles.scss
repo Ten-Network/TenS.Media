@@ -1,7 +1,7 @@
 .custom-button {
-    background-color: #232526;
+    background-color: #414141;
     border: none;
-    color: #20BF55;
+    color: whitesmoke;
     cursor: pointer;
     display: flex;
     font-size: 15px;
@@ -16,9 +16,9 @@
     width: auto;
 
     &:hover {
-        background-color: #20BF55;
-        border: 1px solid #232526;
-        color: #232526;
+        background-color: whitesmoke;
+        border: 1px solid #414141;
+        color: #414141;
     } 
 
     &:focus {
@@ -26,13 +26,13 @@
     }
 
     &.inverted {
-        background-color: #20BF55;
-        border: 1px solid #232526;
-        color: #232526;
+        background-color: whitesmoke;
+        border: 1px solid #414141;
+        color: #414141;
 
         &:hover {
-            background-color: #232526;
-            color: #20BF55;
+            background-color: #414141;
+            color: whitesmoke;
         }
     }
 }

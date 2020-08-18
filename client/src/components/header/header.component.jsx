@@ -25,7 +25,7 @@ const Header  = ({ currentUser, hidden, logOut, clearCart, history }) => {
         const timeFunction = () => {
             setTimeout(() => { 
                 history.push('/signin')
-            }, 1000);
+            }, 750);
         }
         timeFunction();
     }
@@ -35,6 +35,7 @@ const Header  = ({ currentUser, hidden, logOut, clearCart, history }) => {
             <Link className='logo-container' to='/'>
                 <Logo className='logo' />
             </Link>
+            <input className='search' type='text'  placeholder='Search for Products..' />
             <div className='options'>
                 <Link className='option' to='/'>
                     Home

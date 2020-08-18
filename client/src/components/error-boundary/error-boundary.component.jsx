@@ -19,13 +19,15 @@ class ErrorBoundary extends React.Component {
         if (this.state.hasErrored) {
             return (
                 <div className='error-image-overlay'>
-                    <img src='https://i.imgur.com/qIufhof.png' alt='error' className='error-image' />
-                    <div className='error-image-text'>Caution! This Page is Cordoned Off</div>
+                    <img src='https://i.imgur.com/lKJiT77.png' alt='error' className='error-image' />
+                    <div className='error-image-text'>A Dog Ate this Page</div>
                     <div className='error-image-description'>
-                        The earthquake was not good to the bike lane on your way to work. A large gap in the 
-                        pavement (too big to be called a pothole) had swallowed three oblivious bikers whole. 
-                        So the city had put up two pylons and yellow caution tape. Pretty frustrating for you 
-                        given your propensity to do 360 jumps over the gap.
+                        This page has faced some error, try reloading the page and if the problem still 
+                        persists then try coming back to this page later when it is fixed by our team.
+                        
+                        <br /> 
+                        <br /> 
+                        Your user experience matters to us. We are sorry for the inconvenience. :(
                     </div>
                 </div>
             );

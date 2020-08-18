@@ -4,10 +4,7 @@
 }
 
 body {
-    background: #232526; 
-    background: -webkit-linear-gradient(to left, #414345, #232526);  
-    background: linear-gradient(to left, #414345, #232526); 
-    color: #20BF55; 
+    color: #414141; 
     padding: 20px 60px;
 
     @media screen and (max-width: 800px) {
@@ -16,6 +13,6 @@ body {
 }
 
 a {
-    color: #20BF55;
+    color: #414141;
     text-decoration: none;
 }
