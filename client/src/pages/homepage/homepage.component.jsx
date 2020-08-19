@@ -12,9 +12,7 @@ import './homepage.styles.scss';
 const Homepage  = ({ setCurrentUser }) => {
     useEffect(() => {
         const isLoggedIn = async () => {
-            const response = await axios.get('/authenticated');
-    
-            const user = response.data.user;
+            const user = await (await axios.get('/authenticated')).data.user;   
     
             if (user) {
                 setCurrentUser({
@@ -23,9 +21,9 @@ const Homepage  = ({ setCurrentUser }) => {
                 name: user.name,
                 email: user.email
                 });
-            }
-        
-            setCurrentUser(user);
+            } else {
+                setCurrentUser(null);
+            }        
         }
         isLoggedIn();
     }, [setCurrentUser]);
