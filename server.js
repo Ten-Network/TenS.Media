@@ -1,10 +1,8 @@
 const express               = require('express'),  
       session               = require('express-session'), 
       config                = require('config');
-      bodyParser            = require('body-parser'),
       passport              = require('passport'),
-      localStrategy         = require('passport-local'),
-      passportLocalMongoose = require('passport-local-mongoose');
+      localStrategy         = require('passport-local');
 
 const app = express();
 
