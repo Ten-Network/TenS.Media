@@ -35,7 +35,7 @@ const Header  = ({ currentUser, hidden, logOut, clearCart, history }) => {
             <Link className='logo-container' to='/'>
                 <Logo className='logo' />
             </Link>
-            <input className='search' type='text'  placeholder='Search for Products..' />
+            <input className='search hidden' type='text'  placeholder='Search for Products..' />
             <div className='options'>
                 <Link className='option' to='/'>
                     Home

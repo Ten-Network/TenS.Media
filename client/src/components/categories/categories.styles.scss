@@ -59,12 +59,13 @@
       position: absolute;
 
       @media screen and (max-width: 800px) {
-        height: 80px;
+        height: 90px;
+        width: 120px;
       }
   
       .title {
         color: #414141;
-        font-size: 22px;
+        font-size: 21px;
         font-weight: bold;
         margin-bottom: 6px;
       }
