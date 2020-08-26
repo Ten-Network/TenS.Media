@@ -1,51 +1,51 @@
 .checkout-item {
-    align-items: center;
-    border-bottom: 1px solid #414141;
-    display: flex;
-    font-size: 21px;
-    min-height: 100px;
-    padding: 15px 0;
-    width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #414141;
+  display: flex;
+  font-size: 21px;
+  min-height: 100px;
+  padding: 15px 0;
+  width: 100%;
+
+  @media screen and (max-width: 800px) {
+    font-size: 18px;
+  }
+
+  .image-container {
+    height: 168px;
+    padding-right: 15px;
+    width: 23%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .title,
+  .quantity,
+  .price {
+    width: 23%;
 
     @media screen and (max-width: 800px) {
-        font-size: 18px;
+      width: 21%;
+    }
+  }
+
+  .quantity {
+    display: flex;
+
+    .arrow {
+      cursor: pointer;
     }
 
-    .image-container {
-        height: 168px;
-        padding-right: 15px;
-        width: 23%;
-
-        img {
-            height: 100%;
-            width: 100%;
-        }
+    .value {
+      margin: 0 10px;
     }
+  }
 
-    .title,
-    .quantity,
-    .price {
-        width: 23%;
-
-        @media screen and (max-width: 800px) {
-            width: 21%;
-        }
-    }
-
-    .quantity {
-        display: flex;
-
-        .arrow {
-            cursor: pointer;
-        }
-
-        .value {
-            margin: 0 10px;
-        }
-    }
-
-    .remove-button {
-        cursor: pointer;
-        padding-left: 12px;
-    }
+  .remove-button {
+    cursor: pointer;
+    padding-left: 12px;
+  }
 }

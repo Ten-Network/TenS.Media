@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://BigBasket:TheEntrepreneurshipNetwork@cluster0.feznw.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority",
-    "secret": "Big Basket project for The Entrepreneurship Network"
+  "mongoURI": "mongodb+srv://BigBasket:TheEntrepreneurshipNetwork@cluster0.feznw.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "secret": "Big Basket project for The Entrepreneurship Network"
 }

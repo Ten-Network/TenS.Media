@@ -1,81 +1,81 @@
 .carousel {
-    align-items: center;
-    border: 1px solid #414141;
-    box-sizing: border-box;
-    display: flex;
-    height: 60vh;
-    margin-bottom: 21vh;
-    overflow: hidden;
-    position: relative;
-    width: 98.8vw;
+  align-items: center;
+  border: 1px solid #414141;
+  box-sizing: border-box;
+  display: flex;
+  height: 60vh;
+  margin-bottom: 21vh;
+  overflow: hidden;
+  position: relative;
+  width: 98.8vw;
 
-    &:hover {
-        cursor: pointer;
+  &:hover {
+    cursor: pointer;
 
-        .btn {
-            opacity: 0.9;
-        }
-
-        .slider {  
-            overflow: hidden;
-        }
+    .btn {
+      opacity: 0.9;
     }
 
     .slider {
-        align-items: center;
-        justify-content: center;
-        display: flex;
+      overflow: hidden;
+    }
+  }
+
+  .slider {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    min-width: 100%;
+    transition: transform 0.9s ease-in-out;
+
+    .img {
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .btn {
+    align-items: center;
+    background: #414141;
+    border: 1px solid #414141;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 3vw;
+    height: 15%;
+    justify-content: center;
+    opacity: 0.6;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3%;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  #left {
+    left: 0;
+    @extend .btn;
+  }
+
+  #right {
+    right: 0;
+    @extend .btn;
+  }
+
+  @media screen and (max-width: 800px) {
+    .slider {
+      .img {
+        background-position-x: right;
+        background-size: cover;
         height: 100%;
-        min-width: 100%;
-        transition: transform 0.9s ease-in-out;        
-
-        .img {
-            background-position: center;
-            background-size: cover;
-            height: 100%;
-            width: 100%;
-        }
+        width: 100%;
+      }
     }
-
-    .btn {
-        align-items: center;
-        background: #414141;
-        border: 1px solid #414141;
-        color: whitesmoke;
-        cursor: pointer;
-        font-size: 3vw;
-        height: 15%;
-        justify-content: center;
-        opacity: 0.6;
-        outline: none;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 3%;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-
-    #left {
-        left: 0;
-        @extend .btn;
-    }
-
-    #right {
-        right: 0;
-        @extend .btn;
-    }
-
-    @media screen and (max-width: 800px) {
-        .slider {         
-            .img {
-                background-position-x: right;
-                background-size: cover;
-                height: 100%;
-                width: 100%;
-            }
-        }
-    }
+  }
 }

@@ -1,18 +1,18 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 body {
-    color: #414141; 
-    padding: 20px 60px;
+  color: #414141;
+  padding: 20px 60px;
 
-    @media screen and (max-width: 800px) {
-        padding: 10px;
-    }
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+  }
 }
 
 a {
-    color: #414141;
-    text-decoration: none;
+  color: #414141;
+  text-decoration: none;
 }

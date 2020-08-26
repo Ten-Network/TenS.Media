@@ -2,52 +2,52 @@ $main-color: whitesmoke;
 $sub-color: #414141;
 
 @mixin shrinkLabel {
-    top: -15px;
-    font-size: 12px;
-    color: $sub-color
+  top: -15px;
+  font-size: 12px;
+  color: $sub-color;
 }
 
 .form-input {
-    margin: 45px 0;
-    position: relative;
+  margin: 45px 0;
+  position: relative;
 
-    .form {
-        background: none;
-        background-color: $main-color;
-        border: none;
-        border-bottom: 1px solid $sub-color;
-        color: $sub-color;
-        display: block;
-        font-size: 18px;
-        margin: 24px 0;
-        padding: 9px 9px 9px 6px;
-        width: 100%;
+  .form {
+    background: none;
+    background-color: $main-color;
+    border: none;
+    border-bottom: 1px solid $sub-color;
+    color: $sub-color;
+    display: block;
+    font-size: 18px;
+    margin: 24px 0;
+    padding: 9px 9px 9px 6px;
+    width: 100%;
 
-        &:focus {
-            outline: none;
-        }
-
-        &:focus ~ .form-input-label {
-            @include shrinkLabel();
-        }
+    &:focus {
+      outline: none;
     }
 
-    input[type='password'] {
-        letter-spacing: 0.3rem;
+    &:focus ~ .form-input-label {
+      @include shrinkLabel();
     }
+  }
 
-    .form-input-label {
-        color: $sub-color;
-        font-size: 15px;
-        font-weight: normal;
-        left: 6px;
-        pointer-events: none;
-        position: absolute;
-        top: 9px;
-        transition: 300ms ease-in-out;
+  input[type="password"] {
+    letter-spacing: 0.3rem;
+  }
 
-        &.shrink {
-            @include shrinkLabel();
-        }
+  .form-input-label {
+    color: $sub-color;
+    font-size: 15px;
+    font-weight: normal;
+    left: 6px;
+    pointer-events: none;
+    position: absolute;
+    top: 9px;
+    transition: 300ms ease-in-out;
+
+    &.shrink {
+      @include shrinkLabel();
     }
+  }
 }

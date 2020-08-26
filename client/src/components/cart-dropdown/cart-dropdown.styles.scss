@@ -1,39 +1,39 @@
 .cart-dropdown {
-    background-color: #FFFFFF;
-    border: 1px solid #414141;
-    color: #414141;
+  background-color: #ffffff;
+  border: 1px solid #414141;
+  color: #414141;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 21px;
+  position: absolute;
+  right: 39px;
+  top: 90px;
+  width: 240px;
+  z-index: 1;
+
+  .cart-items {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    padding: 21px;
-    position: absolute;
-    right: 39px;
-    top: 90px;
-    width: 240px;
-    z-index: 1;
+    height: 326px;
+    overflow-y: scroll;
+  }
 
-    .cart-items {
-        display: flex;
-        flex-direction: column;
-        height: 326px;
-        overflow-y: scroll;
+  button {
+    background-color: #414141;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    margin-top: auto;
+
+    &:hover {
+      background-color: whitesmoke;
+      border: 1px solid #414141;
+      color: #414141;
     }
+  }
 
-    button {
-        background-color: #414141;
-        border: 1px solid whitesmoke;
-        color: whitesmoke;
-        margin-top: auto;
-
-        &:hover {
-            background-color: whitesmoke;
-            border: 1px solid #414141;
-            color: #414141;
-        }
-    }
-
-    .empty-message {
-        font-size: 21px;
-        margin: 150px auto;
-    }
+  .empty-message {
+    font-size: 21px;
+    margin: 150px auto;
+  }
 }

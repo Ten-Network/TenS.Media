@@ -1,73 +1,73 @@
 .collection-item {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 360px;
-    position: relative;
-    width: 21vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  position: relative;
+  width: 21vw;
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+      button {
+        opacity: unset;
+      }
+    }
+  }
+
+  .img {
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #414141;
+    box-shadow: 0px 0px 3px 1px #414141;
+    height: 90%;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+
+  .custom-button {
+    display: none;
+    opacity: 0.9;
+    position: absolute;
+    top: 255px;
+    width: 81%;
 
     @media screen and (max-width: 800px) {
-        width: 40vw;
-        &:hover {
-          .image {
-            opacity: unset;
-          }
-          button {
-            opacity: unset;
-          }
-        }
+      display: block;
+      opacity: 0.9;
+      height: 50px;
+      min-width: unset;
+      padding: 0 10px;
     }
+  }
 
+  &:hover {
     .img {
-        background-position: center;
-        background-size: cover;
-        border: 1px solid #414141;
-        box-shadow: 0px 0px 3px 1px #414141;
-        height: 90%;
-        margin-bottom: 6px;
-        width: 100%;
+      opacity: 0.6;
     }
 
     .custom-button {
-        display: none;
-        opacity: 0.9;
-        position: absolute;
-        top: 255px;
-        width: 81%;
+      display: flex;
+    }
+  }
 
-        @media screen and (max-width: 800px) {
-            display: block;
-            opacity: 0.9;
-            height: 50px;
-            min-width: unset;
-            padding: 0 10px;
-        }
+  .collection-footer {
+    display: flex;
+    font-size: 18px;
+    height: 10%;
+    justify-content: space-between;
+    width: 100%;
+
+    .name {
+      margin-bottom: 15px;
+      width: 80%;
     }
 
-    &:hover {
-        .img {
-            opacity: 0.6;
-        }
-
-        .custom-button {
-            display: flex;
-        }
+    .price {
+      width: 20%;
     }
-
-    .collection-footer {
-        display: flex;
-        font-size: 18px;
-        height: 10%;
-        justify-content: space-between;
-        width: 100%;
-
-        .name {
-            margin-bottom: 15px;
-            width: 80%;
-        }
-
-        .price {
-            width: 20%;
-        }
-    }
+  }
 }

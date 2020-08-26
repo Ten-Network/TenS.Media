@@ -1,28 +1,28 @@
 .log-in {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+
+  @media screen and (max-width: 800px) {
+    margin: 30px auto;
+    width: 240px;
+  }
+
+  .title {
+    margin: 6px 0;
+  }
+
+  .option {
+    margin-top: 6px;
+
+    .route {
+      color: #0cbaba;
+      margin-left: 9px;
+    }
+  }
+
+  .buttons {
     display: flex;
-    flex-direction: column;
-    width: 420px;
-
-    @media screen and (max-width: 800px) {
-        margin : 30px auto;
-        width: 240px;
-    }
-
-    .title {
-        margin: 6px 0;
-    }
-
-    .option {
-        margin-top: 6px;
-
-        .route {
-            color: #0CBABA;
-            margin-left: 9px;
-        }
-    }
-
-    .buttons {
-        display: flex;
-        justify-content: space-between;
-    }
+    justify-content: space-between;
+  }
 }

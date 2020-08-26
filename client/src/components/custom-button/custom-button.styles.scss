@@ -1,39 +1,39 @@
 .custom-button {
-    background-color: #414141;
-    border: none;
-    border-radius: 3rem;
-    color: whitesmoke;
-    cursor: pointer;
-    display: flex;
-    font-size: 15px;
-    font-weight: bolder;
-    height: 51px;
-    justify-content: center;
-    letter-spacing: 0.6px;
-    line-height: 51px; 
-    min-width: 165px;
-    padding: 0 36px;
-    text-transform: uppercase;
-    width: auto;
+  background-color: #414141;
+  border: none;
+  border-radius: 3rem;
+  color: whitesmoke;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  font-weight: bolder;
+  height: 51px;
+  justify-content: center;
+  letter-spacing: 0.6px;
+  line-height: 51px;
+  min-width: 165px;
+  padding: 0 36px;
+  text-transform: uppercase;
+  width: auto;
+
+  &:hover {
+    background-color: whitesmoke;
+    border: 1px solid #414141;
+    color: #414141;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.inverted {
+    background-color: whitesmoke;
+    border: 1px solid #414141;
+    color: #414141;
 
     &:hover {
-        background-color: whitesmoke;
-        border: 1px solid #414141;
-        color: #414141;
-    } 
-
-    &:focus {
-        outline: none;
+      background-color: #414141;
+      color: whitesmoke;
     }
-
-    &.inverted {
-        background-color: whitesmoke;
-        border: 1px solid #414141;
-        color: #414141;
-
-        &:hover {
-            background-color: #414141;
-            color: whitesmoke;
-        }
-    }
+  }
 }

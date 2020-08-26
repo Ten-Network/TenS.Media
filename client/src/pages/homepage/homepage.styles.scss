@@ -1,13 +1,13 @@
 .homepage {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 21px 81px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 21px 81px;
 
-    @media screen and (max-width: 800px) {
-        .carousel {
-            height: 30vh;
-            width: 60vw;
-        }
+  @media screen and (max-width: 800px) {
+    .carousel {
+      height: 30vh;
+      width: 60vw;
     }
+  }
 }

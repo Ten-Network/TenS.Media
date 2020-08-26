@@ -1,23 +1,23 @@
 .register {
-    display: flex;
-    flex-direction: column;
-    width: 420px;
+  display: flex;
+  flex-direction: column;
+  width: 420px;
 
-    @media screen and (max-width: 800px) {
-        margin : 30px auto;
-        width: 240px;
+  @media screen and (max-width: 800px) {
+    margin: 30px auto;
+    width: 240px;
+  }
+
+  .title {
+    margin: 6px 0;
+  }
+
+  .option {
+    margin: 6px 0;
+
+    .route {
+      color: #0cbaba;
+      margin-left: 9px;
     }
-
-    .title {
-        margin: 6px 0;
-    }
-
-    .option {
-        margin: 6px 0;
-
-        .route {
-            color: #0CBABA;
-            margin-left: 9px;
-        }
-    }
+  }
 }

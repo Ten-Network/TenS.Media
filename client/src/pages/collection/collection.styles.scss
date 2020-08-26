@@ -1,25 +1,25 @@
 .collection-page {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 
-    .title {
-        font-size: 27px;
-        margin: 0 auto 24px;
+  .title {
+    font-size: 27px;
+    margin: 0 auto 24px;
+  }
+
+  .items {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
     }
 
-    .items {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-
-        @media screen and (max-width: 800px) {
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 15px;
-        }
-
-        & .collection-item {
-            margin-bottom: 30px;
-        }
+    & .collection-item {
+      margin-bottom: 30px;
     }
+  }
 }
