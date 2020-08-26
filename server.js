@@ -33,7 +33,5 @@ app.use("/register", require("./routes/sign-up"));
 const port = process.env.PORT || 5000;
 
 app.listen(port, (error) => {
-  if (error) {
-    throw error;
-  }
+  if (error) throw error;
 });
