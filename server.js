@@ -1,7 +1,8 @@
 const express = require("express"),
   session = require("express-session"),
-  config = require("config");
-(passport = require("passport")), (localStrategy = require("passport-local"));
+  config = require("config"),
+  passport = require("passport"),
+  localStrategy = require("passport-local");
 
 const app = express();
 
