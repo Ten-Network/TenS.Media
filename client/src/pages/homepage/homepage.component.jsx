@@ -14,16 +14,14 @@ const Homepage = ({ setCurrentUser }) => {
     const isLoggedIn = async () => {
       const user = await (await axios.get("/authenticated")).data.user;
 
-      if (user) {
+      if (user)
         setCurrentUser({
           id: user._id,
           cart: user.cart,
           name: user.name,
           email: user.email,
         });
-      } else {
-        setCurrentUser(null);
-      }
+      else setCurrentUser(null);
     };
     isLoggedIn();
   }, [setCurrentUser]);

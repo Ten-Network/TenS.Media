@@ -26,9 +26,8 @@ class Register extends React.Component {
 
     const { password, confirmPassword } = this.state;
 
-    if (password !== confirmPassword) {
-      alert("Passwords do not match");
-    } else {
+    if (password !== confirmPassword) alert("Passwords do not match");
+    else {
       const { register } = this.props;
 
       register(this.state);
