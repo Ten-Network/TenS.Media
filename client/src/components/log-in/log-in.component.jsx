@@ -41,11 +41,6 @@ class LogIn extends React.Component {
       await config.post("/login", body);
 
       await this.props.history.push("/");
-
-      await this.setState({
-        email: "",
-        password: "",
-      });
     } catch (error) {
       alert(error.response.data);
     }
