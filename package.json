@@ -7,18 +7,17 @@
     "start": "node server",
     "server": "nodemon server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "Lavneesh Jaggi",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "compression": "^1.7.4",
     "config": "^3.3.1",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "lodash.memoize": "^4.1.2",
     "mongoose": "^5.9.20",
-    "node-sass": "^4.14.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1"

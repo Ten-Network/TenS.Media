@@ -1,4 +1,6 @@
 const express = require("express"),
+  path = require("path"),
+  compression = require("compression"),
   session = require("express-session"),
   config = require("config"),
   passport = require("passport"),
@@ -12,6 +14,7 @@ const connectDB = require("./config/db"),
 connectDB();
 
 app.use(express.json({ extended: false }));
+app.use(compression());
 app.use(
   session({
     secret: config.get("secret"),
@@ -30,6 +33,14 @@ app.use("/authenticated", require("./routes/authenticated"));
 app.use("/login", require("./routes/sign-in"));
 app.use("/logout", require("./routes/sign-out"));
 app.use("/register", require("./routes/sign-up"));
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "client/build")));
+
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  });
+}
 
 const port = process.env.PORT || 5000;
 
