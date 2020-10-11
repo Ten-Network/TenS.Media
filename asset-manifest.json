@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TenS.Media/static/css/main.1ee5228a.chunk.css",
+    "main.js": "/TenS.Media/static/js/main.2c829f1d.chunk.js",
+    "main.js.map": "/TenS.Media/static/js/main.2c829f1d.chunk.js.map",
+    "runtime-main.js": "/TenS.Media/static/js/runtime-main.ed4af65a.js",
+    "runtime-main.js.map": "/TenS.Media/static/js/runtime-main.ed4af65a.js.map",
+    "static/js/2.772e0023.chunk.js": "/TenS.Media/static/js/2.772e0023.chunk.js",
+    "static/js/2.772e0023.chunk.js.map": "/TenS.Media/static/js/2.772e0023.chunk.js.map",
+    "index.html": "/TenS.Media/index.html",
+    "precache-manifest.f7f1de41d3cc6734e91b3badf4585055.js": "/TenS.Media/precache-manifest.f7f1de41d3cc6734e91b3badf4585055.js",
+    "service-worker.js": "/TenS.Media/service-worker.js",
+    "static/css/main.1ee5228a.chunk.css.map": "/TenS.Media/static/css/main.1ee5228a.chunk.css.map",
+    "static/js/2.772e0023.chunk.js.LICENSE.txt": "/TenS.Media/static/js/2.772e0023.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed4af65a.js",
+    "static/js/2.772e0023.chunk.js",
+    "static/css/main.1ee5228a.chunk.css",
+    "static/js/main.2c829f1d.chunk.js"
+  ]
+}
